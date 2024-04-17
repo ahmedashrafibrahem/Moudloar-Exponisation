@@ -1,0 +1,149 @@
+/* تحديد الألوان */
+:root {
+    --main-color: #49243E;
+    --secondary-color: #704264;
+    --accent-color: #BB8493;
+    --highlight-color: #DBAFA0;
+}
+
+/* استخدام الألوان */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle, var(--main-color), var(--secondary-color));
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    transition: background 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+
+header,
+.navbar,
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar {
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid #fff;
+}
+
+.main {
+    padding: 20px;
+    flex-grow: 1;
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    color: #fff;
+}
+
+.footer-social {
+    margin-top: 20px;
+}
+
+.footer-social a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* تأثيرات للخلفية */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('background-pattern.png');
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+}
+
+/* تأثير الظل للعناصر داخل الـ body */
+.calculator input[type="number"],
+.calculator button {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+.calculator input[type="number"]:hover,
+.calculator button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* تنسيق العناصر داخل الـ body */
+.calculator label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.calculator input[type="number"],
+.calculator button {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.calculator button {
+    background-color: var(--accent-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.calculator button:hover {
+    background-color: var(--highlight-color);
+}
