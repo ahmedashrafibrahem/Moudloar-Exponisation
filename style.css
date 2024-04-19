@@ -183,6 +183,88 @@ body::after {
     margin-bottom: 20px;
 }
 
+
+
+
+
+
+
+
+
+/* تنسيق مواقع التواصل الاجتماعي في النص */
+.social-media-body .contact-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-media-body .contact-social a:hover {
+    transform: scale(1.2); /* تكبير الرمز عند التحويم */
+    opacity: 0.8;
+}
+.social-media-body .whatsapp-button img:hover {
+    transform: scale(1.1); /* تكبير الصورة عند التحويم */
+}
+
+/* تجعل الموقع متجاوبًا مع مختلف أحجام الشاشات */
+
+.social-media-body .contact-social a {
+    color: #fff;
+    margin: 0 20px;
+    font-size: 50px; /* زيادة حجم الأيقونات */
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.social-media-body .contact-social a:hover {
+    opacity: 0.8;
+}
+
+/* تصغير حجم صورة رزار الواتساب */
+.social-media-body .whatsapp-button img {
+    width: 200px;
+}
+
+/* تحديد الزرار في النص */
+.contact-section button {
+    display: block;
+    margin: 0 auto;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-section button:hover {
+    background-color: var(--highlight-color);
+}
+
+
+/* تنسيق العناصر داخل قسم الاتصال */
+.contact-section p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact-section h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.whatsapp-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 /* تجعل الموقع متجاوبًا مع مختلف أحجام الشاشات */
 @media only screen and (max-width: 600px) {
     /* أضف أي تعديلات تريدها للعناصر حسب الحاجة */
