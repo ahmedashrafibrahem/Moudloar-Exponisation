@@ -36,4 +36,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
         return result;
     }
+
+  
+    
+    
+
+
+
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    var h1 = document.querySelector(".navbar h1");
+    h1.classList.add("loaded");
 });
