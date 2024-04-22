@@ -18,7 +18,7 @@ body {
     transition: background 0.5s ease;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
 }
 
@@ -92,7 +92,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('background-pattern.png');
+    background-image: url('#');
     opacity: 0.2;
     pointer-events: none;
 }
@@ -142,6 +142,11 @@ body::after {
     background-color: var(--accent-color);
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-size: 25px;
+}
+
+.calculator p {
+    font-size: 25px;
 }
 
 .calculator button:hover {
@@ -153,7 +158,7 @@ body::after {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 20px;
+    padding: auto;
 }
 
 .about-image {
@@ -164,6 +169,7 @@ body::after {
 
 .about-image img {
     display: block;
+    border-radius: 10px;
 }
 
 .about-image:hover {
@@ -342,6 +348,26 @@ body::after {
         line-height: 1.5;
         margin-bottom: 20px;
     }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       .navbar {
         padding: 5px 0;
