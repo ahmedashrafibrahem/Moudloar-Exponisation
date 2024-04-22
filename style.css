@@ -32,7 +32,45 @@ footer {
 
 .navbar {
     padding: 10px 0;
+  
 }
+
+
+
+h1 {
+    margin-top: 50px;
+    position: relative;
+    z-index: 1;
+    font-size: 2rem;
+    font-weight: bold;
+    
+    
+    font-size: 2rem;
+    font-weight: bold;
+    animation: slideUp 1s ease forwards;
+    opacity: 0;
+    transform: translateY(50px);
+} 
+h1.loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
 
 .navbar ul {
     list-style-type: none;
